@@ -67,4 +67,4 @@ playGame = () => {
   playRound(humanSelection, computerSelection);
   console.log(humanScore, computerScore);
 };
-playGame();
+// playGame();
