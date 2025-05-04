@@ -3,7 +3,7 @@ let paper = "paper";
 let scissors = "scissors";
 let humanScore = 0;
 let computerScore = 0;
-playRound = (humanChoice, computerChoice) => {
+let playRound = (humanChoice, computerChoice) => {
   if (humanChoice === rock && computerChoice === scissors) {
     console.log("You Win! Rock beats Scissors");
     humanScore++;
@@ -47,24 +47,5 @@ playGame = () => {
   playRound(humanSelection, computerSelection);
   console.log(humanScore, computerScore);
 
-  humanSelection = getHumanChoice();
-  computerSelection = getComputerChoice();
-  playRound(humanSelection, computerSelection);
-  console.log(humanScore, computerScore);
-
-  humanSelection = getHumanChoice();
-  computerSelection = getComputerChoice();
-  playRound(humanSelection, computerSelection);
-  console.log(humanScore, computerScore);
-
-  humanSelection = getHumanChoice();
-  computerSelection = getComputerChoice();
-  playRound(humanSelection, computerSelection);
-  console.log(humanScore, computerScore);
-
-  humanSelection = getHumanChoice();
-  computerSelection = getComputerChoice();
-  playRound(humanSelection, computerSelection);
-  console.log(humanScore, computerScore);
 };
 // playGame();
